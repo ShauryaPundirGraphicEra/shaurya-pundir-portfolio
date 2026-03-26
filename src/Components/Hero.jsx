@@ -79,7 +79,7 @@ export function Hero() {
         start: "top top",
         end: "bottom 50%",
         scrub: 1.2,
-         markers:true,
+       //  markers:true,
       },
       yPercent: -20,
       opacity: 0.75,
