@@ -79,7 +79,7 @@ export function Hero() {
         start: "top top",
         end: "bottom 50%",
         scrub: 1.2,
-         markers:true,
+        // markers:true,
       },
       yPercent: -20,
       opacity: 0.75,
@@ -106,12 +106,12 @@ export function Hero() {
   return (
     <section 
       ref={heroRef} 
-      className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
+      className="min-h-screen  flex items-center justify-center relative pt-20  overflow-hidden"
     >
-      <div className="flex flex-row max-w-7xl mx-auto bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/20 rounded-3xl p-8 backdrop-blur-2xl shadow-2xl shadow-black/50">
+      <div className="flex flex-row max-w-7xl  mx-auto bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/20 rounded-3xl p-8 backdrop-blur-2xl shadow-2xl shadow-black/50">
         
         {/* Left Text */}
-        <div className="flex flex-col mt-10 ml-10 max-w-[420px] text-amber-50">
+        <div className="flex flex-col mt-10 ml-10 max-w-[420px]  text-amber-50">
           <h1 ref={titleRef} className="text-4xl font-bold font-sans">
             Shaurya Pundir
           </h1>
@@ -135,12 +135,13 @@ export function Hero() {
 
         {/* Right Image */}
         <div className="ml-12 flex items-center ">
-          <img 
+          {/* <img 
             ref={imageRef}
             className="w-[420px] mix-blend-screen" 
             src="/hero2.png" 
             alt="Hero"
-          />
+          /> */}
+          <video ref={imageRef}  className="w-[420px]  rounded-full mix-blend-screen"  src="/hero.mp4" autoPlay muted playsInline/>
         </div>
       </div>
 

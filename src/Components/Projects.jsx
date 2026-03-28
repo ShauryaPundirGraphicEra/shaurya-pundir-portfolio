@@ -12,24 +12,24 @@ const projects = [
     title: "Shopnet AI E-Commerce",
     description: "AI-driven MERN e-commerce platform with a Python microservice for hybrid recommendations using SentenceTransformers and PyTorch-based SGES. Implements cold-start optimization via GeoIP and seasonal heuristics.",
     tech: ["MongoDB", "Express", "React", "Node.js", "Python", "PyTorch"],
-    image: "https://images.unsplash.com/photo-1555529771-35a1b98f9b3b?q=80&w=600&auto=format&fit=crop",
-    link: "#"
+    image: "https://glance-web.glance-cdn.com/large_Ai_Shopping_39c33f4c55.jpg",
+    link: "https://github.com/ShauryaPundirGraphicEra/MAJOR-PROJECT-HYBRID-RECOMMENDATION-based-E-Commerce-Shopnet"
   },
   {
     id: 2,
     title: "GovResolve Civic System",
     description: "AI-powered civic complaint platform that auto-routes issues using LLM-based classification (Qwen2.5-7B-Instruct). Features RBAC security and automated email workflows.",
     tech: ["React", "Node.js", "MongoDB", "Hugging Face API", "NodeMailer"],
-    image: "public/proj1.png",
-    link: "#"
+    image: "https://factech.ai/images/svg/customer-complaint-management-system.svg",
+    link: "https://github.com/ShauryaPundirGraphicEra/Complaint-Management-System"
   },
   {
     id: 3,
     title: "Smart Traffic Monitoring",
     description: "Computer vision system using YOLOv11 and DeepSORT for vehicle tracking, license plate detection, and real-time speed violation logging with OCR integration.",
     tech: ["Python", "YOLOv11", "DeepSORT", "OpenCV", "MySQL"],
-    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=600&auto=format&fit=crop",
-    link: "#"
+    image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPXyXY2SFy1QxJDB33Ys8sMR-kCOcTOI10EEjNdWukUO6pI92c",
+    link: "https://github.com/ShauryaPundirGraphicEra/Realtime_Traffic_Monitoring"
   }
 ];
  
@@ -101,17 +101,22 @@ export function Projects() {
       {/* Project Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projects.map((project) => (
+          <a 
+              href={project.link} 
+              target="_blank" >
           <div 
             key={project.id} 
             className="group flex flex-col bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/10 rounded-3xl p-6 backdrop-blur-xl transition-all duration-500 hover:border-white/30 hover:-translate-y-3 hover:shadow-2xl"
           >
-            <div className="w-full h-56 bg-black/40 rounded-2xl mb-6 overflow-hidden relative">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
-              />
-            </div>
+            
+              <div className="w-full h-56 bg-black/40 rounded-2xl mb-6 overflow-hidden relative">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                />
+              </div>
+          
             
             <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
             <p className="text-white/70 mb-6 flex-grow leading-relaxed">{project.description}</p>
@@ -127,6 +132,7 @@ export function Projects() {
               ))}
             </div>
           </div>
+          </a>
         ))}
       </div>
     </section>
