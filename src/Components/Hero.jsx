@@ -184,6 +184,19 @@ export function Hero() {
       scale: 1.15,
       ease: "none",
     });
+
+    gsap.from(".g1-spin-left", {
+      x: -20,
+      duration: 0.7,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(".g1-spin-right", {
+      x: 20,
+      duration: 1.1,
+      ease: "power1.inOut",
+    });
+
   }, { scope: heroRef });
 
   return (
@@ -191,17 +204,20 @@ export function Hero() {
       ref={heroRef} 
       className="min-h-screen flex items-center justify-center relative pt-12 pb-12 md:pt-20 overflow-hidden"
     >
+     <img src="/bg.png" alt="graphic 1" className=" absolute top w-40"/> 
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 
                         bg-gradient-to-br from-white/10 via-white/5 to-transparent 
                         border border-white/20 rounded-3xl p-6 md:p-8 lg:p-10 
                         backdrop-blur-2xl shadow-2xl shadow-black/50">
-
           {/* Left - Text Content */}
           <div className="flex flex-col w-full lg:max-w-1/2 text-center lg:text-left order-2 lg:order-1">
+            <img src="/g1.png" alt="graphic 1" className="g1-spin-left absolute top-108  rotate-[-50deg] w-9 md:w-15"/>
+            <img src="/g1.png" alt="graphic 1" className="g1-spin-right absolute top-108 right-5  rotate-[50deg] w-9 md:w-30 md:top-5 md:rotate-[30deg]"/>
+            { /*  insert here*/ }
             <h1 
               ref={titleRef} 
-              className="text-3xl sm:text-4xl lg:text-4xl font-bold font-sans text-amber-50"
+              className="text-2xl sm:text-4xl lg:text-4xl font-bold font-sans text-amber-50"
             >
               Shaurya Pundir
             </h1>

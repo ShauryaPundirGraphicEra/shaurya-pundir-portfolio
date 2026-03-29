@@ -90,6 +90,7 @@ export function Projects() {
     >
       {/* Section Header */}
       <div ref={headerRef} className="mb-20 text-center">
+        <img src="/pin.png" className="absolute top-[-1.5rem] w-15 sm:w-20 md:w-22 lg:left-35" />
         <h2 className="text-5xl md:text-6xl font-bold font-sans text-white mb-6">
           Some of my Projects
         </h2>
