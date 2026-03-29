@@ -201,7 +201,7 @@ export function Hero() {
           <div className="flex flex-col w-full lg:max-w-1/2 text-center lg:text-left order-2 lg:order-1">
             <h1 
               ref={titleRef} 
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold font-sans text-amber-50"
+              className="text-3xl sm:text-4xl lg:text-4xl font-bold font-sans text-amber-50"
             >
               Shaurya Pundir
             </h1>
