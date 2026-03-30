@@ -197,7 +197,7 @@ export function Navbar() {
           <ul className="hidden md:flex items-center gap-x-8 text-sm uppercase tracking-widest font-medium">
             <li>
               <a 
-                href="#home" 
+                href="#hero" 
                 className="nav-link text-white/70 hover:text-white transition-all duration-300 relative group"
                 onClick={closeMenu}
               >
@@ -269,7 +269,7 @@ export function Navbar() {
       >
         <ul className="flex flex-col py-6 px-6 space-y-6 text-lg font-medium">
           <li>
-            <a href="#home" className="text-white/80 hover:text-white block py-2" onClick={closeMenu}>Home</a>
+            <a href="#hero" className="text-white/80 hover:text-white block py-2" onClick={closeMenu}>Home</a>
           </li>
           <li>
             <a href="#projects" className="text-white/80 hover:text-white block py-2" onClick={closeMenu}>Projects</a>
