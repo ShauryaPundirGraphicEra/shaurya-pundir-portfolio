@@ -72,7 +72,7 @@ export function Projects() {
         trigger: sectionRef.current,
         start: "top top",
         end: "bottom top",
-        scrub: 1.5,
+        scrub: 1.0,
       },
       yPercent: -15,
       opacity: 0.85,

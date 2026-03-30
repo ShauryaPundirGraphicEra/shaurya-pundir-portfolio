@@ -165,10 +165,10 @@ export function Hero() {
         trigger: heroRef.current,
         start: "top top",
         end: "bottom 50%",
-        scrub: 1.2,
+        scrub: 1,
       },
       yPercent: -20,
-      opacity: 0.75,
+      opacity: 1,
       scale: 0.96,
       ease: "none",
     });
@@ -178,11 +178,18 @@ export function Hero() {
         trigger: heroRef.current,
         start: "top top",
         end: "bottom top",
-        scrub: 2,
+        scrub: 1,
       },
       yPercent: -55,
       scale: 1.15,
       ease: "none",
+    });
+
+    gsap.to(".bg-graphic", {
+      rotate: 360,
+      duration: 20,
+      ease: "none",
+      repeat: -1,
     });
 
     gsap.from(".g1-spin-left", {
@@ -204,7 +211,7 @@ export function Hero() {
       ref={heroRef} 
       className="min-h-screen flex items-center justify-center relative pt-12 pb-12 md:pt-20 overflow-hidden"
     >
-     <img src="/bg.png" alt="graphic 1" className=" absolute top w-40"/> 
+     <img src="/bg.png" alt="graphic 1" className="bg-graphic absolute top w-60 bg-blend-hue"/> 
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 
                         bg-gradient-to-br from-white/10 via-white/5 to-transparent 
