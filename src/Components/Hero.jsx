@@ -254,7 +254,7 @@ export function Hero() {
             <video 
               ref={imageRef}
               className="w-full h-auto rounded-2xl mix-blend-screen object-contain"
-              src="/hero.mov" 
+              src="https://res.cloudinary.com/dwqepludl/video/upload/v1776007277/hero_fnyysx.mp4" 
               autoPlay 
               muted 
               playsInline 
